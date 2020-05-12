@@ -11,8 +11,8 @@ body {
 }
 .main {
   width: 100%;
-  height: 200vh;
-  background-color: rgba(31, 160, 240, 0.367);
+  height: 170vh;
+  background-color: rgba(20, 91, 136, 0.367);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +49,7 @@ input {
   height: 30px;
   margin-top: 10px;
   margin-bottom: 15px;
+  padding-left: 5px;
 }
 input:focus {
   border: 1px solid rgb(31, 160, 240);
@@ -110,13 +111,15 @@ textarea {
 #submit:focus {
     border: 1px solid black;
 }
+
 @media screen and (max-width: 700px) {
   .section {
     max-width: 100%;
     min-width: 100%;
     width: 0;
     width: 100%;
-    padding: 20px;
+    padding: 25px;
+    box-sizing: border-box;
   }
   body {
     background-image: none;
@@ -128,4 +131,7 @@ textarea {
   .header {
     width: 100% ;
   }
+}
+option:disabled {
+  color:rgb(170,170,170);
 }

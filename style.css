@@ -11,7 +11,7 @@ body {
 }
 .main {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: rgba(31, 160, 240, 0.367);
   display: flex;
   flex-direction: column;
@@ -82,8 +82,7 @@ label-option {
   display: inline-block;
 }
 
-element.style {
-}
+
 .input-radio, .input-checkbox {
     display: inline-block;
     margin-right: 0.625rem;

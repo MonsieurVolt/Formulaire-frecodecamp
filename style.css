@@ -1,0 +1,132 @@
+body {
+  background-image: url(./images/code_html.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(31, 160, 240, 0.367);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 44, 77);
+  color: white;
+  Font: 18px Poppins,sans-serif;
+  width: 40%;
+  min-width: 600px;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 5px;
+}
+.header {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+p  {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+input:focus {
+  border: 1px solid rgb(31, 160, 240);
+  border-radius: 5px;
+}
+#dropdown {
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+}
+#dropdown:focus {
+  border: 1px solid rgb(31, 160, 240); 
+}
+.option {
+  display: block;
+  flex-direction: column;
+}
+.option label {
+  display: flex;
+  flex-direction: row;
+}
+.leuravis {
+  display: block;
+  margin-top: 10px;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+label-option {
+  display: inline-block;
+}
+
+element.style {
+}
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.p-checkbox {
+  margin-top: 0;
+}
+textarea {
+  height: 100px;
+}
+.text-area-label {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+#submit {
+  text-align: center;
+  background-color: rgb(49, 167, 17);
+  color: white;
+  height: 45px;
+  border: none;
+  margin-top: 20px;
+}
+#submit:focus {
+    border: 1px solid black;
+}
+@media screen and (max-width: 700px) {
+  .section {
+    max-width: 100%;
+    min-width: 100%;
+    width: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  body {
+    background-image: none;
+  }
+  .main {
+    background-color: rgb(44, 44, 77);
+    align-items: stretch;
+  }
+  .header {
+    width: 100% ;
+  }
+}

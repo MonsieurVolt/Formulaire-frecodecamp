@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulaire</title>
+</head>
+<body>
+  <main class="main">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header class="header"><h1 id="title">Formulaire d'inscription freecodecamp</h1>
+    <p id="description">Formulaire à remplir pour compléter votre inscription</p>
+  </header>
+  <section class="section">
+  
+  <form method="post" id="survey-form">
+    <label for="name" id="name-label" >Nom</label>
+    <input type="text" name="name" id="name" required placeholder="Nom">
+    <label for="email" id="email-label">email</label>
+    <input type="email" name="email" id="email" required placeholder="email">
+    <label for="age" id="number-label" >Votre Age (optionnel)</label>
+    <input type="number" min="10" max="99" id="number" name="age" placeholder="Age" required>
+    <p>Quel option vous décrit le mieux?</p>
+    <select name="statut" id="dropdown">
+    <option disabled selected value>Choisissez une option</option>
+    <option value="etudiant">Etudiant</option>
+    <option value="tapt">Travail à plein temps</option>
+    <option value="eapt">Etudiant à plein temps</option>
+    <option value="rd">Vous préférer ne rien dire</option>
+    <option value="autre">Autre</option>
+  </select>
+  <div class="leuravis"></div>
+    <p class="option">
+        Recomanderiez-vous freecodecamp à un ami?</p>
+        <label><input class="input-radio" type="radio" name="avis" value="totallement" id="moins15" />  Totalement</label>
+        <label><input class="input-radio" type="radio" name="avis" value="peut-etre" id="peut-etre" />  Peut-être</label>
+        <label><input class="input-radio" type="radio" name="avis" value="pas sur" id="pas sur" />  Pas-sur</label>
+    </p>
+  <p class="p-checkbox">Cochez les sections qui vous intéresse : </p>
+           <label><input class="input-checkbox" type="checkbox" name="frontend" id="frontend" value="test1"/>Développement frontend</label>
+           <label><input class="input-checkbox" type="checkbox" name="backend" id="backend" value="test2" />Développement backend</label>
+  
+  <label class="text-area-label" for="suggestion">Avez-vous d'autres choses à ajouter?</label>
+  <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
+  <input type="submit" id="submit">
+   </form>
+  </section>
+</main>
+</body>
+</html>
